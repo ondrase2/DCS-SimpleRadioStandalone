@@ -172,7 +172,7 @@ namespace Ciribob.DCS.SimpleRadio.Standalone.Client.UI
 
             InitFlowDocument();
 
-            _dcsAutoConnectListener = new DCSAutoConnectHandler(AutoConnect);
+            if(false)_dcsAutoConnectListener = new DCSAutoConnectHandler(AutoConnect);
 
             _updateTimer = new DispatcherTimer { Interval = TimeSpan.FromMilliseconds(100) };
             _updateTimer.Tick += UpdatePlayerLocationAndVUMeters;
