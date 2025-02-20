@@ -168,7 +168,7 @@ namespace Ciribob.DCS.SimpleRadio.Standalone.Client.Network
 
                     if (_tcpClient.Connected)
                     {
-                        _radioDCSSync.Start();
+                        if(false)_radioDCSSync.Start();
                         _lotATCSync.Start();
                         _vaicomSync.Start();
 
