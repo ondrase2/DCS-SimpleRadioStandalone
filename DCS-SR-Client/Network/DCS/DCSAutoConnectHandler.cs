@@ -51,10 +51,12 @@ namespace Ciribob.DCS.SimpleRadio.Standalone.Client.Network.DCS
                 {
                     try
                     {
+                      if(false){
                         var localEp = new IPEndPoint(IPAddress.Any,
                             GlobalSettingsStore.Instance.GetNetworkSetting(GlobalSettingsKeys.DCSAutoConnectUDP));
                         _dcsUdpListener = new UdpClient(localEp);
                         break;
+                      }
                     }
                     catch(Exception ex)
                     {
